@@ -1,3 +1,5 @@
+from datetime import date
+
 class Member:
     @staticmethod
     def add_member(conn):
@@ -6,7 +8,8 @@ class Member:
         first_name = input("Insert first name:")
         last_name = input("Insert last name:")
         email = input("Insert email:")
-        registration_date = input("Insert registration date in the format YYYY-MM-DD:")
+        today = date.today()
+        registration_date = today.isoformat()
 
         cursor.execute("""
                  INSERT INTO members (first_name, last_name, email, registration_date)

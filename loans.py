@@ -17,7 +17,7 @@ class Loans:
 
         today = date.today()
         loaning_date = today.isoformat()
-        loaning_due_date = input("Type in the date you'd like to return the book in the format YYYY-MM-DD")
+        loaning_due_date = input("Type in the date you'd like to return the book in the format YYYY-MM-DD:")
 
         cursor.execute("""
         INSERT INTO loans (book_id, member_id, loan_date, due_date)

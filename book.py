@@ -18,7 +18,7 @@ class Book:
 
         title = input("Insert book title:")
         author_id = nameAuthor
-        genre_id = input("Insert genre, type '1' for Fantasy, '2' for Drama:")
+        genre_id = input("Select genre: for FANTASY type '1', for SCI-FI type '2', for DETECTIVE type '3':")
         isbn = input("Insert ISBN:")
         publication_year = input("Insert publication year:")
         copies = input("Insert number of copies:")
